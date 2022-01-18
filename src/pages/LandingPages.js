@@ -3,13 +3,14 @@ import React, { Component } from 'react'
 
 //karena ada jsconfig, nggak perlu mundur folder dulu eg:"../"
 //KEY : "elem" + CTRL SPACE
-import moduleName from 'elements/Button'
+import Header from 'parts/Header'
 export default class LandingPages extends Component {
     render() {
         return (
-            <div>
+            <>
                 
-            </div>
+              <Header {...this.props}></Header>  
+            </>
         )
     }
 }

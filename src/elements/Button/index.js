@@ -1,5 +1,5 @@
 //rfc
-import React, { Component } from 'react'
+import React from 'react'
 
 //KEY : imrr
 //untuk route navigaton di aplikasi
@@ -49,14 +49,17 @@ export default function Button(props) {
                 className={className.join(' ')} 
                 style={props.style} 
                 //noopenner noreferrer untuk Source Engine Optimization, jika tidak ada noopenner noreferrer maka akan dapat warning di Logs
-                target={props.target === "_blank" ?"noopenner noreferrer":undefined}>{props.children}</a>
+                target={props.target === "_blank" ?"noopenner noreferrer":undefined}
+                rel={props.target === "_blank" ?"noopenner noreferrer":undefined}>{props.children}</a>
             )
         }else {
             return(
                 //Link kedalam aplikasi
                 <Link to={props.href} 
                 className={className.join(' ')} 
-                style={props.style} onClick={onClick}>
+                style={props.style} 
+                // onClick={onClick}
+                >
                 {props.children}
                 </Link>
             )
@@ -64,7 +67,8 @@ export default function Button(props) {
     }
     return (
         <Button className={className.join(' ')} 
-                style={props.style} onClick={onClick}>
+                // style={props.style} onClick={onClick}
+                >
             {props.children}
         </Button>
     )
