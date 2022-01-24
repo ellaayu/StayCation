@@ -7,7 +7,6 @@ import { Link } from 'react-router-dom'
 
 //impt
 import propTypes from 'prop-types'
-// import Button from './index.test'
 
 export default function Button(props) {
     const className = [props.className]
@@ -66,11 +65,11 @@ export default function Button(props) {
         }
     }
     return (
-        <Button className={className.join(' ')} 
+        <button className={className.join(' ')} 
                 // style={props.style} onClick={onClick}
                 >
             {props.children}
-        </Button>
+        </button>
     )
 }
 
@@ -91,5 +90,6 @@ Button.propTypes = {
     isBlock: propTypes.bool,
     //memastikan Button mengarah ke luar atau dalam aplikasi
     isExternal: propTypes.bool,
-    hasShadow: propTypes.bool
+    hasShadow: propTypes.bool,
+    isPrimary: propTypes.bool
 }

@@ -1,0 +1,127 @@
+{
+    "hero": {
+        "travelers": 50000,
+        "treasures": 180000,
+        "cities": 22000
+    },
+    "mostPicked": [
+        {
+            "_id": "asd102909",
+            "name": "Shining Hotel",
+            "type": "Hotel",
+            "imageUrl": "/images/Overlay.jpg",
+            "country": "France",
+            "city": "Prancis",
+            "price": "80",
+            "unit": "night"
+        },
+        {
+            "_id": "asd102909",
+            "name": "Shimmering Apartement",
+            "type": "Apartement",
+            "imageUrl": "/images/Overlay.jpg",
+            "country": "USA",
+            "city": "Canada",
+            "price": "80",
+            "unit": "night"
+        },
+        {
+            "_id": "asd102909",
+            "name": "Splendid Hotel",
+            "type": "Hotel",
+            "imageUrl": "/images/Overlay.jpg",
+            "country": "United Kingdom",
+            "city": "England",
+            "price": "95",
+            "unit": "night"
+        },
+        {
+            "_id": "asd102909",
+            "name": "Amazing Pent House",
+            "type": "Apartement",
+            "imageUrl": "/images/Overlay.jpg",
+            "country": "UK",
+            "city": "Eng",
+            "price": "80",
+            "unit": "night"
+        },
+        {
+            "_id": "asd102909",
+            "name": "Pada Hotel",
+            "type": "Apartement",
+            "imageUrl": "/images/Overlay.jpg",
+            "country": "South Korea",
+            "city": "Incheon",
+            "price": "80",
+            "unit": "night"
+        }
+    ],
+    "categories": [
+        {
+            "_id": "lalala341lala",
+            "name": "House with Beautiful Kitchen",
+            "items": [
+                {
+                    "_id": "asd102909",
+                    "name": "LalaLand House",
+                    "type": "Apartement",
+                    "imageUrl": "/images/Overlay.jpg",
+                    "country": "UK",
+                    "city": "Eng",
+                    "isPopular": false
+                },
+                {
+                    "_id": "asd102909",
+                    "name": "LalaLand House",
+                    "type": "Apartement",
+                    "imageUrl": "/images/Overlay.jpg",
+                    "country": "UK",
+                    "city": "Eng",
+                    "isPopular": false
+                },
+                {
+                    "_id": "asd102909",
+                    "name": "LalaLand House",
+                    "type": "Apartement",
+                    "imageUrl": "/images/Overlay.jpg",
+                    "country": "UK",
+                    "city": "Eng",
+                    "isPopular": true
+                }
+            ]
+        },
+        {
+            "_id": "lalala341lala",
+            "name": "House with Beautiful Backrard",
+            "items": [
+                {
+                    "_id": "asd102909",
+                    "name": "LalaLand House",
+                    "type": "Apartement",
+                    "imageUrl": "/images/Overlay.jpg",
+                    "country": "UK",
+                    "city": "Eng",
+                    "isPopular": false
+                },
+                {
+                    "_id": "asd102909",
+                    "name": "LalaLand House",
+                    "type": "Apartement",
+                    "imageUrl": "/images/Overlay.jpg",
+                    "country": "UK",
+                    "city": "Eng",
+                    "isPopular": false
+                },
+                {
+                    "_id": "asd102909",
+                    "name": "LalaLand House",
+                    "type": "Apartement",
+                    "imageUrl": "/images/Overlay.jpg",
+                    "country": "UK",
+                    "city": "Eng",
+                    "isPopular": true
+                }
+            ]
+        }
+    ]
+}
