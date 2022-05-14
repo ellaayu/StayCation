@@ -5,7 +5,7 @@ import IconCamera from 'assets/images/Icon/icon-camera.svg'
 import Button from 'elements/Button'
 import LandingPage from 'json/landingPage.json'
 import numberFormat from 'utils/formatNumber';
-
+import Fade from 'react-reveal/Fade';
 
 export default function Hero(props) {
     
@@ -19,6 +19,7 @@ export default function Hero(props) {
     }
 
     return (
+        <Fade bottom>
         <section className='container pt-4'>
             <div className='row align-items-center'>
                 <div className='col-auto pr-5' style={{ width:530 }}>
@@ -31,7 +32,7 @@ export default function Hero(props) {
                         Time to make another memorable moments. Your money can return but your time is not. 
                         So, Are you in??
                     </p>
-                    <Button className='btn px-5' hasShadow isPrimary onclick={showMostPicked}>
+                    <Button className='btn px-5' hasShadow isPrimary onClick={showMostPicked}>
                         Show Me Now
                     </Button>
 
@@ -68,5 +69,6 @@ export default function Hero(props) {
                 </div>
             </div>
         </section>
+        </Fade>
     )
 }

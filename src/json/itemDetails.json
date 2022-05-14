@@ -1,0 +1,122 @@
+{
+    
+        "_id": "asd102909",
+        "name": "Shimmering Hotel",
+        "type": 22000,
+        "imageUrls": [
+            {
+                "_id":"asd102909",
+                "url": "/images/Overlay.jpg"
+            },
+            {
+                "_id":"asd102909",
+                "url": "/images/Overlay.jpg"
+            },
+            {
+                "_id":"asd102909",
+                "url": "/images/Overlay.jpg"
+            }
+        ],
+        "country": "Indonesia",
+        "city": "Prancis",
+        "price": "80",
+        "unit": "night",
+        "isPopular": true,
+        "hasBackyard": true,
+        "description": "<p> Bagi yang mencari rumah di daerah pinggiran ibu kota kota tetapi terjangkau dan Bag daerah pinggiran ibu kota kota tetapi terjangkau dan Bagi yang mencari rumah di daerah pinggiran ibu kota kota tetapi terjangkau dan</p><p>Bagi yang mencari rumah di daerah pinggiran ibu kota kota tetapi Bagi yang mencari rumah di daerah pinggiran ibu kota kota tetapi Bagi yang mencari rumah di daerah pinggiran ibu kota kota tetapi Bagi yang mencari rumah di daerah pinggiran ibu kota kota tetapi </p>",
+        "features": [
+            {
+                "_id":"asd102909",
+                "url": "/images/icon-camera.svg",
+                "qty": "3",
+                "name": "bedroom"
+            },
+            {
+                "_id":"asd102909",
+               "url": "/images/icon-camera.svg",
+                "qty": "1",
+                "name": "bedroom"
+            },
+            {
+                "_id":"asd102909",
+                "url": "/images/icon-camera.svg",
+                "qty": "1",
+                "name": "bedroom"
+            },
+            {
+                "_id":"asd102909",
+                "url": "/images/icon-camera.svg",
+                "qty": "1",
+                "name": "bedroom"
+            },
+            {
+                "_id":"asd102909",
+                "url": "/images/icon-camera.svg",
+                "qty": "1",
+                "name": "bedroom"
+            },
+            {
+                "_id":"asd102909",
+                "url": "/images/icon-camera.svg",
+                "qty": "1",
+                "name": "bedroom"
+            },
+            {
+                "_id":"asd102909",
+                "url": "/images/icon-camera.svg",
+                "qty": "1",
+                "name": "bedroom"
+            },
+            {
+                "_id":"asd102909",
+                "url": "/images/icon-camera.svg",
+                "qty": "1",
+                "name": "bedroom"
+            }
+        ],
+        "categories": [
+        {
+            "_id": "lalala341lala",
+            "name": "House with Beautiful Backyard",
+            "items": [
+                {
+                    "_id": "asd102909",
+                    "name": "LalaLand House",
+                    "type": "Apartement",
+                    "imageUrl": "/images/Overlay.jpg",
+                    "country": "UK",
+                    "city": "Eng",
+                    "isPopular": false
+                },
+                {
+                    "_id": "asd102909",
+                    "name": "LalaLand House",
+                    "type": "Apartement",
+                    "imageUrl": "/images/Overlay.jpg",
+                    "country": "UK",
+                    "city": "Eng",
+                    "isPopular": false
+                },
+                {
+                    "_id": "asd102909",
+                    "name": "LalaLand House",
+                    "type": "Apartement",
+                    "imageUrl": "/images/Overlay.jpg",
+                    "country": "UK",
+                    "city": "Eng",
+                    "isPopular": true
+                },
+                {
+                    "_id": "asd102909",
+                    "name": "LalaLand House",
+                    "type": "Apartement",
+                    "imageUrl": "/images/Overlay.jpg",
+                    "country": "UK",
+                    "city": "Eng",
+                    "isPopular": true
+                }
+            ]
+        }
+    ]
+     
+}

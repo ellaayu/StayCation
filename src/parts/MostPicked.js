@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Button from 'elements/Button';
-
+import Fade from 'react-reveal/Fade';
 
 export default function MostPicked(props) {
   return (
@@ -14,6 +14,9 @@ export default function MostPicked(props) {
             //mapping perulangan kolom
             props.data.map( (item, index) => {
                 return <div key={`mostpicked-${index}`} className={`item column-4 ${index === 0 ? " row-2":" row-1"}`}>
+
+                    {/* Menambah Fade dengan delay */}
+                    <Fade bottom delay={500 * index}>
                     <div className='card card-featured'>Card {index+1}
                         <div className='tag'>
                             $ {item.price}
@@ -29,6 +32,7 @@ export default function MostPicked(props) {
                             <span>{item.city}, {item.country}</span>
                         </div>
                     </div>
+                    </Fade>
                 </div>   
             })
         }

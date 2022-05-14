@@ -17,9 +17,9 @@ export default function Button(props) {
     if(props.hasShadow) className.push("btn-shadow")
 
     //handle onCLick
-    const onclick = () => {
+    const onClick = () => {
         //memastikan Button tersedia properti onClick atau tidak
-        if(props.onclick) props.onclick()
+        if(props.onClick) props.onClick()
     }
 
     if(props.isDisable || props.isLoading){
@@ -77,7 +77,7 @@ Button.propTypes = {
     //oneOf = enum. Hanya terima properti tertentu
     type: propTypes.oneOf(["button", "link"]),
     //memastikan Button akan memiliki function
-    onclick: propTypes.func,
+    onClick: propTypes.func,
     target: propTypes.string,
     href: propTypes.string,
     className: propTypes.string,

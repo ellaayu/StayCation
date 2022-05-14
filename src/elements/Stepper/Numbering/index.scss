@@ -1,0 +1,81 @@
+@import "../../../assets/scss/colorVariables";
+
+$stepperMainColor: $gray-200;
+$size: 50px;
+
+ol.stepper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    padding: 0;
+
+    li{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        width: $size;
+        height: $size;
+        border-radius: $size;
+        color: $white;
+
+        &:after {
+            position: absolute;
+            content: "";
+            z-index: 2;
+            width: $size;
+            height: $size;
+            border-radius: $size;
+            background-image: url(
+                'data:image/svg+xml;utf8,<svg width="31" height="29" viewBox="0 0 31 29" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.49799 15.1749C2.76613 14.3475 1.50217 14.2701 0.674852 15.002C-0.152467 15.7339 -0.229852 16.9978 0.502007 17.8251L3.49799 15.1749ZM14.5 26L13.575 24.2267L13.575 24.2267L14.5 26ZM0.502007 17.8251C2.48497 20.0668 4.8803 23.1086 7.11469 25.2039C8.24975 26.2683 9.5068 27.2544 10.8387 27.8205C12.2255 28.4098 13.8461 28.5968 15.425 27.7733L13.575 24.2267C13.3526 24.3428 13.0379 24.4088 12.4032 24.1391C11.7135 23.846 10.8626 23.2348 9.85085 22.2861C7.7917 20.3552 5.73833 17.7074 3.49799 15.1749L0.502007 17.8251ZM15.425 27.7733C16.2834 27.3255 17.0743 26.5745 17.7665 25.7913C18.4863 24.9768 19.226 23.9801 19.9619 22.8873C21.4349 20.7 22.9826 17.9933 24.4302 15.2814C27.327 9.85422 29.918 4.22399 30.8057 2.35987L27.1943 0.640133C26.2788 2.56263 23.7425 8.07519 20.9014 13.3978C19.48 16.0607 18.0061 18.6306 16.6441 20.653C15.9625 21.6651 15.3313 22.5065 14.7694 23.1423C14.1797 23.8094 13.7779 24.1209 13.575 24.2267L15.425 27.7733Z" fill="white"/></svg>'
+            ); 
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: $teal;
+            transform: scale(1);
+            transition: 0.35s transform ease-in-out;
+        }
+        &:not(:last-child) {
+            margin-right: 60px;
+            &:before{
+                content: "";
+                z-index: -2;
+                top: 50%;
+                left: 100%;
+                position: absolute;
+                width: $size + 10;
+                height: 1px;
+                background-color: $stepperMainColor;
+            }
+
+            // ol
+            //     li.active:after
+            //     li
+            //     li
+
+            &.active {
+                &:after{
+                    z-index: -1;
+                    background: $white;
+                    border: 1px solid $stepperMainColor;
+                    transform: scale(1.2);
+                }
+                background-color: $stepperMainColor;
+                color: $gray-500;
+
+                // & + li hanya memanggil tag li pertamam seteah li.active
+
+                // semua li setelah li.active punya properti ini
+                & ~ li {
+                    color: $gray-500;
+                    background: $stepperMainColor;
+                    &:after{
+                        content: none;
+                    }
+                }
+            }
+        }
+    }
+}
